@@ -18,7 +18,13 @@ return new class extends Migration
             $table->decimal('price', 8, 2);
             $table->timestamps();
             $table->softDeletes(); 
+
+            $table->index(['name', 'price']);
         });
+
+        Artisan::call('db:seed', [
+            '--class' => 'ProductSeeder', 
+        ]);
     }
 
     /**
