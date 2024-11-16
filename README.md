@@ -64,3 +64,18 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+
+## Application workflow
+
+API
+GET http://127.0.0.1:8000/api/products-list    /// List API
+GET http://127.0.0.1:8000/api/products-list?query=eaque   ///List API with Search
+DELETE http://127.0.0.1:8000/api/delete-products/5   ///Delete Product
+
+
+Login Details
+Email: vincenzo@yopmail.com
+Pass: 123456
